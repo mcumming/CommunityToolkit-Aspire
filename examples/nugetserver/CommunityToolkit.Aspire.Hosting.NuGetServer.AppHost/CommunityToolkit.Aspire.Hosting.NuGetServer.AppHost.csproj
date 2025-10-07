@@ -1,0 +1,15 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <Sdk Name="Aspire.AppHost.Sdk"  Version="$(AspireAppHostSdkVersion)"  />
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <UserSecretsId>ca889678-f07d-4341-9b03-89d2284a7ef6</UserSecretsId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Aspire.Hosting.AppHost" />
+    <ProjectReference Include="..\..\..\src\CommunityToolkit.Aspire.Hosting.NuGetServer\CommunityToolkit.Aspire.Hosting.NuGetServer.csproj"  IsAspireProjectResource="false" />
+  </ItemGroup>
+
+</Project>
